@@ -1,0 +1,54 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* #tab2 table, #tab6 table {
+    width: 60%; 
+    margin: 0 auto;
+} */
+
+td a img {
+    transition: transform 0.2s ease, filter 0.2s ease; /* Hiệu ứng mượt */
+}
+
+td a img:hover {
+    transform: scale(1.5); /* Phóng to 20% */
+    filter: brightness(0.8); /* Làm tối ảnh nhẹ */
+    cursor: pointer; /* Thay đổi con trỏ thành hình tay */
+    /* background-color: antiquewhite; */
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    td a img {
+        max-width: 50px; /* Giới hạn kích thước ảnh trong bảng */
+        height: auto;
+    }
+}

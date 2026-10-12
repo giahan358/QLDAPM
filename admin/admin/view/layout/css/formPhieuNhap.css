@@ -1,0 +1,222 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-pane {
+    width: 65%;
+    padding: 20px;
+}
+
+.left-pane {
+    border-right: 1px solid #ccc;
+}
+
+.left-pane h2 {
+    text-align: center;
+}
+
+.right-pane {
+    padding: 20px;
+    width: 35%;
+}
+
+.right-pane h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.table-container {
+    max-height: 300px;  
+    overflow-y: auto;   /* Cho phép cuộn dọc */
+    margin-bottom: 20px;
+}
+
+.table-container thead th {
+    position: sticky;
+    top: 0;
+    background-color: #2980b9;
+    z-index: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+form {
+    position: relative; 
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    width: 50%;  
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 60%;  
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.btn {
+    background-color: #000080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.form-group input {
+    margin-left: 10px;
+}
+
+.close-button {
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    background-color: #f44336; 
+    color: white; 
+    border: none; 
+    border-radius: 50%; 
+    font-size: 18px;
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.close-button:hover {
+    background-color: #e53935;
+    transform: scale(1.1);
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 60px 40px 40px; 
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    height: 75vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2,
+.popup-content p,
+.popup-content form {
+    margin-bottom: 20px;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    padding-top: 10px; 
+    text-align: center;
+    color: red;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px; right: 15px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-pane,
+    .right-pane {
+        width: 100%;
+        padding: 10px;
+        border-right: none;
+    }
+
+    .left-pane h2,
+    .right-pane h2 {
+        font-size: 18px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .popup-content {
+        width: 95%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
