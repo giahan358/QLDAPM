@@ -1,0 +1,24 @@
+.ub-dialog { box-sizing:border-box; width:min(560px,calc(100vw - 24px)); max-height:90vh; max-height:90dvh; overflow:auto; border:0; border-radius:12px; padding:24px; color:#24312b; background:white; box-shadow:0 12px 50px #0003; }
+dialog.ub-dialog { position:fixed; inset:0; margin:auto; height:fit-content; transform:none; }
+.ub-dialog::backdrop { background:#0008; }
+.ub-dialog h2 { font-size:22px; margin:0 0 16px; }
+.ub-dialog label { display:block; margin:14px 0 6px; font-weight:600; }
+.ub-dialog :is(select,textarea,input[type=file]) { box-sizing:border-box; width:100%; max-width:100%; border:1px solid #bbb; border-radius:6px; padding:10px; font:inherit; font-size:16px; }
+.ub-dialog-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:10px; margin-top:20px; }
+.ub-dialog button,.ub-order-actions button { padding:8px 12px; border:1px solid #338052; border-radius:6px; color:#22603b; background:#fff; cursor:pointer; }
+.ub-dialog button[type=submit] { color:#fff; background:#267044; }
+.ub-dialog button:disabled { opacity:.55; cursor:wait; }
+.ub-form-message { color:#963128; white-space:pre-wrap; }
+.ub-help { font-size:13px; color:#666; }
+.ub-order-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+.ub-order-note { display:block; margin-top:6px; font-size:13px; }
+.ub-review-images { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.ub-review-images img { width:90px; height:90px; object-fit:cover; border-radius:6px; }
+.ub-product-reviews { margin:24px 0; padding:20px; background:white; border:1px solid #ddd; border-radius:8px; }
+.ub-product-reviews h2 { font-size:22px; margin:0 0 12px; }
+.ub-review-card { border-top:1px solid #ddd; padding:18px 0; }
+.ub-review-card p { white-space:pre-wrap; overflow-wrap:anywhere; }
+.ub-review-stars { color:#976100; font-size:20px; }
+.ub-review-date { color:#666; font-size:13px; }
+.ub-review-pagination { display:flex; align-items:center; gap:12px; }
+@media(max-width:640px) { .ub-dialog { padding:18px; } .ub-product-reviews { padding:14px; } }
