@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.table-container {
+    margin: 30px auto;
+    max-width: 95%;
+}
+.btn-action {
+    margin: 2px;
+    padding: 5px 10px;
+}
+.form-check-input {
+    cursor: pointer;
+}
+th {
+    text-align: center;
+    background-color: #2980b9;
+    font-weight: bold;
+    color: white;
+}
+h2 {
+    color: #2980b9;
+    font-weight: bold;
+    text-align: center;
+}
+.table-container-custom {
+    overflow-x: auto;
+}
+.table-body-scroll {
+    max-height: 485px;
+    overflow-y: auto;
+}
+.table-container-custom thead th {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+}
+
+.table-container-custom table {
+    width: 100%;
+    table-layout: fixed;
+}
+.table-container-custom > table {
+    margin-bottom: 0; /* Xóa khoảng cách dưới của bảng thead */
+}
+.table-body-scroll > table {
+    margin-top: 0; /* Xóa khoảng cách trên của bảng tbody */
+}
+.table-container-custom > table,
+.table-body-scroll > table {
+    border-collapse: collapse;
+}
+#formThemVaiTro input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 10px;
+    width: 20%;
+}
+#formThemVaiTro .btn-success {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 1;
+    font-weight: bold;
+}
+#formThemVaiTro .btn-success:hover {
+    opacity: 0.8;
+}
+.table-head th,
+.table-body td {
+    box-sizing: border-box;
+}
+
+#searchQuyen {
+    max-width: 400px;
+    min-width: 300px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#searchQuyen:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .table-container {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .table-container-custom {
+        overflow-x: auto;
+    }
+
+    .table-container-custom table {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    .table-body-scroll {
+        max-height: 350px;
+    }
+
+    .table-head th, .table-body td {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    #formThemVaiTro input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #searchQuyen {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #formThemVaiTro .btn-success {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn-action {
+        padding: 5px 10px;
+    }
+
+    th {
+        font-size: 14px;
+    }
+}
