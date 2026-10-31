@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^(create-url|vnpay-return|vnpay-ipn|refund|csrf)$ index.php [L]
+<FilesMatch "^(\.env.*|.*\.(sql|md))$">
+    Require all denied
+</FilesMatch>
